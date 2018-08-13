@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #353541;
+}
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0px;
+}
+/*style cho thanh menu*/
+nav {
+	background-color: #252e30;
+	width: 960px;
+	height: 50px;/*    clear: both;*/
+}
+nav #main-menu #logo {
+	margin-left: 20px;
+	padding: 0px;
+}
+nav #main-menu #logo a h3 {
+	margin-top: 5px;
+	display: block;
+	background-color: #4b5456;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	color: #ffffff;
+	text-align: center;
+	font-family: "Time New Roman";
+	font-size: 30px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+nav #main-menu #logo p#name {
+	float: left;
+	color: #ffffff;
+	font-family: "Time New Roman";
+	font-size: 16px;
+	font-weight: bold;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 10px;
+}
+nav #main-menu ul li {
+	float: right;
+	list-style: none;
+}
+nav #main-menu ul li a {
+	font-family: "Roboto";
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	color: #ffffff;
+	padding-right: 20px;
+}
+nav #main-menu ul li a:hover {
+	color: #f0113b;
+}
+/*end style cho thanh menu*/
+/*start style banner*/
+#banner {
+	width: 960px;
+	height: 290px;
+	background-color: #FFFFFF;
+}
+#banner ul li {
+	display: block;
+	margin: 100px 0px 0px 100px;
+	padding-right: 30px;
+	list-style: none;
+	float: left;
+	width: 200px;
+	height: 140px;
+}
+#banner ul li h2 {
+	font-family: "Roboto";
+	font-size: 20px;
+	font-weight: bold;
+}
+#banner ul li h3 {
+	padding-top: 20px;
+	font-family: "Roboto";
+	font-size: 16px;
+	font-weight: normal;
+	text-align: justify;
+	letter-spacing: 1px;
+}
+/*end style banner*/
+
+/*start style about*/
+
+
+#about {
+	width: 960px;
+	height: 520px;
+	background-color: #f2f2f1;
+	clear: both;
+}
+#about .about-me {
+	padding: 60px 80px;
+}
+#about #content {
+	float: left;
+	width: 390px;
+	height: 400px;
+}
+#about #content img {
+	float: left;
+	padding-right: 10px;
+}
+#about #content h2 {
+	display: block;
+	font-family: "Roboto";
+	font-size: 30px;
+	font-weight: bold;
+	border-bottom: 2px solid #f0113b;
+	width: 220px;
+	height: 50px;
+	line-height: 40px;
+}
+#about #content p {
+	margin-top: 20px;
+	font-family: "Roboto";
+	font-size: 16px;
+	font-weight: normal;
+	font-style: italic;
+	letter-spacing: 5px;
+}
+#about #content ul {
+	margin-top: 50px;
+}
+#about #content ul li {
+	border-bottom: 1px solid #D88586;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#about #content ul li h3 {
+	display: block;
+	font-family: "Roboto";
+	font-size: 20px;
+	font-weight: normal;
+	letter-spacing: 3px;
+}
+#about img#avatar {
+	float: right;
+	width: 320px;
+	height: 400px;
+}

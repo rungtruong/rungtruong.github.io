@@ -26,14 +26,14 @@ body{
 	font-size: 60px;
 	color: #ffffff;
 	font-weight: bold;
-	border-top: 1px solid #ffffff;
-	border-bottom: 1px solid #ffffff;
+	border-top: 1px solid #f0113b;
+	border-bottom: 1px solid #f0113b;
 	width: 670px;	
 	padding: 20px;
 }
 
 #fullscreen h1:hover{
-	color: darkgray;
+	color: #f0113b;
 }
 	
 
@@ -45,11 +45,13 @@ body{
 	color: #ffffff;
 	font-weight: bold;
 	border: 1px solid #ffffff;
+	background-color: #f0113b;
 	width: 100px;
 	padding: 15px;
 	text-decoration: none;
+	border-radius: 10px;
 }
 #fullscreen h3 a:hover{
 	background-color: #ffffff;
-	color: darkgray;
+	color: #f0113b;
 }

@@ -69,7 +69,7 @@ nav #main-menu ul li a:hover {
 /*start style banner*/
 #banner {
 	width: 960px;
-	height: 290px;
+	height: 300px;
 	background-color: #FFFFFF;
 }
 #banner ul li {
@@ -93,6 +93,7 @@ nav #main-menu ul li a:hover {
 	font-weight: normal;
 	text-align: justify;
 	letter-spacing: 1px;
+	line-height: 1.2;
 }
 /*end style banner*/
 

@@ -116,7 +116,7 @@ nav #main-menu ul li a:hover {
 }
 #about #content img {
 	float: left;
-	padding-right: 10px;
+	padding-right: 30px;
 }
 #about #content h2 {
 	display: block;
@@ -124,9 +124,10 @@ nav #main-menu ul li a:hover {
 	font-size: 30px;
 	font-weight: bold;
 	border-bottom: 2px solid #f0113b;
-	width: 220px;
+	width: 205px;
 	height: 50px;
 	line-height: 40px;
+	text-align: right;
 }
 #about #content p {
 	margin-top: 20px;
@@ -155,4 +156,82 @@ nav #main-menu ul li a:hover {
 	float: right;
 	width: 320px;
 	height: 400px;
+}
+/*end style about*/
+
+
+
+/*start style skill*/
+
+#skill {
+	background-color: cornsilk;
+	width: 960px;
+	height: 520px;
+}
+#skill #skill-content {
+	float: left;
+	width: 320px;
+	height: 400px;
+	padding: 60px 0px 0px 80px;
+	clear: left;
+}
+#skill #skill-content img {
+	float: left;
+	padding-right: 30px;
+	height: 40px;
+}
+#skill #skill-content h2 {
+	display: block;
+	font-family: "Roboto";
+	font-size: 30px;
+	font-weight: bold;
+	border-bottom: 2px solid #f0113b;
+	width: 190px;
+	height: 50px;
+	line-height: 40px;
+	text-align: right;
+}
+#skill #skill-content p {
+	margin-top: 20px;
+	font-family: "Roboto";
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 3px;
+	line-height: 2.2;
+	width: 350px;
+	text-align: justify;
+}
+#skill #skill-content a.lienhe {
+	float: left;
+	font-family: "Roboto";
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 30px;
+	border: 2px solid #f0113b;
+	color: #f0113b;
+	width: 150px;
+	text-align: center;
+	padding: 20px 10px 20px 10px;
+/*	border-radius: 5px;*/
+}
+#skill #skill-content a:hover{
+	background-color: #f0113b;
+	color: #FFFFFF;
+}
+#skill ul {
+	float: right;
+	width: 320px;
+	height: 400px;
+	margin-top: 100px;
+	margin-right: 80px;
+}
+#skill ul li {
+	padding-top: 20px;
+}
+#skill ul li h3 {
+	display: block;
+	font-family: "Roboto";
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 3px;
 }

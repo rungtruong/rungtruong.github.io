@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../images/fulscreen.png);
+	background-repeat: no-repeat;
+	background-size:cover;
+/*
+	width: 1200px;
+	height: 720px;
+*/
+	
+}
+#fullscreen{
+	
+	margin: 0;
+	text-transform: uppercase;
+	padding-top: 300px;
+	
+}
+#fullscreen h1{
+	margin: 0 auto;
+	font-family: "Roboto";
+	font-size: 60px;
+	color: #ffffff;
+	font-weight: bold;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	width: 670px;	
+	padding: 20px;
+}
+
+#fullscreen h1:hover{
+	color: darkgray;
+}
+	
+
+#fullscreen h3 a{	
+	margin: 0 auto;
+	display: block;
+	font-family: "Roboto";
+	font-size: 18px;
+	color: #ffffff;
+	font-weight: bold;
+	border: 1px solid #ffffff;
+	width: 100px;
+	padding: 15px;
+	text-decoration: none;
+}
+#fullscreen h3 a:hover{
+	background-color: #ffffff;
+	color: darkgray;
+}

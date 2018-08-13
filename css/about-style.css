@@ -16,6 +16,7 @@ nav {
 	background-color: #252e30;
 	width: 960px;
 	height: 50px;/*    clear: both;*/
+	position: fixed;
 }
 nav #main-menu #logo {
 	margin-left: 20px;

@@ -1,11 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
-body{
+body {
 	margin: 0px;
 	padding: 0px;
-	background-color:#252e30 ;
-/*
+	background-color: #252e30;/*
 	background-image: url(../images/fulscreen.png);
 	background-repeat: no-repeat;
 	background-size:cover;
@@ -13,23 +12,23 @@ body{
 
 	
 }
-#fullscreen{
-	
+#fullscreen {
 	margin: 0 auto;
 	text-transform: uppercase;
 	padding-top: 100px;
-	
 }
-#fullscreen img{
-	
+#fullscreen img {
+	float: inherit;
 	border: 2px solid #f0113b;
 	border-radius: 150px;
 	width: 150px;
 	height: 150px;
-	margin: 0px 0px 20px 585px;
-	
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	display: block;
 }
-#fullscreen h1{
+#fullscreen h1 {
 	margin: 0 auto;
 	font-family: "Roboto";
 	font-size: 50px;
@@ -37,16 +36,14 @@ body{
 	font-weight: bold;
 	border-top: 1px solid #f0113b;
 	border-bottom: 1px solid #f0113b;
-	width: 660px;	
+	width: 660px;
 	padding: 20px;
-	letter-spacing:6px;
+	letter-spacing: 6px;
 }
-
-#fullscreen h1:hover{
+#fullscreen h1:hover {
 	color: #f0113b;
 }
-#fullscreen h2{
-	
+#fullscreen h2 {
 	margin: 0 auto;
 	font-family: "Roboto";
 	font-size: 20px;
@@ -55,9 +52,8 @@ body{
 	letter-spacing: 25px;
 	padding: 20px 0px 0px 20px;
 	width: 695px;
-}	
-
-#fullscreen h3 a{	
+}
+#fullscreen h3 a {
 	margin: 0 auto;
 	display: block;
 	font-family: "Roboto";
@@ -71,7 +67,7 @@ body{
 	text-decoration: none;
 	border-radius: 10px;
 }
-#fullscreen h3 a:hover{
+#fullscreen h3 a:hover {
 	background-color: #ffffff;
 	color: #f0113b;
 }

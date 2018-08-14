@@ -4,7 +4,8 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background: #353541;
+	background-color: #353541;
+	
 }
 #wrapper {
 	width: 960px;

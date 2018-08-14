@@ -23,13 +23,14 @@ body{
 #fullscreen h1{
 	margin: 0 auto;
 	font-family: "Roboto";
-	font-size: 60px;
+	font-size: 50px;
 	color: #ffffff;
 	font-weight: bold;
 	border-top: 1px solid #f0113b;
 	border-bottom: 1px solid #f0113b;
-	width: 670px;	
+	width: 660px;	
 	padding: 20px;
+	letter-spacing:6px;
 }
 
 #fullscreen h1:hover{

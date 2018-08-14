@@ -216,7 +216,8 @@ nav #main-menu ul li a:hover {
 	width: 150px;
 	text-align: center;
 	padding: 20px 10px 20px 10px;
-/*	border-radius: 5px;*/
+	border-radius: 3px;
+	transition: 0.5s;
 }
 #skill #skill-content a:hover{
 	background-color: #f0113b;

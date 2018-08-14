@@ -15,7 +15,7 @@ body{
 }
 #fullscreen{
 	
-	margin: 0;
+	margin: 0 auto;
 	text-transform: uppercase;
 	padding-top: 300px;
 	
@@ -35,7 +35,17 @@ body{
 #fullscreen h1:hover{
 	color: #f0113b;
 }
+#fullscreen h2{
 	
+	margin: 0 auto;
+	font-family: "Roboto";
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: normal;
+	letter-spacing: 25px;
+	padding: 20px 0px 0px 20px;
+	width: 695px;
+}	
 
 #fullscreen h3 a{	
 	margin: 0 auto;

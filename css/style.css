@@ -9,7 +9,6 @@ body {
 	background-repeat: no-repeat;
 	background-size:cover;
 */
-
 	
 }
 #fullscreen {
@@ -39,6 +38,7 @@ body {
 	width: 660px;
 	padding: 20px;
 	letter-spacing: 6px;
+	transition: 0.3s;
 }
 #fullscreen h1:hover {
 	color: #f0113b;
@@ -55,6 +55,7 @@ body {
 }
 #fullscreen h3 a {
 	margin: 0 auto;
+	text-align: center;
 	display: block;
 	font-family: "Roboto";
 	font-size: 18px;
@@ -62,12 +63,34 @@ body {
 	font-weight: bold;
 	border: 1px solid #ffffff;
 	background-color: #f0113b;
-	width: 100px;
+	width: 140px;
 	padding: 15px;
 	text-decoration: none;
 	border-radius: 10px;
+	transition: 0.3s;
 }
 #fullscreen h3 a:hover {
 	background-color: #ffffff;
 	color: #f0113b;
+}
+#fullscreen h3 a span {
+	cursor: pointer;
+	position: relative;
+	transition: 0.5s;
+}
+#fullscreen h3 a span:after {
+	content: '\00bb';
+	font-size: 18px;
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+#fullscreen h3 a:hover span {
+	padding-right: 25px;
+}
+#fullscreen h3 a:hover span:after {
+	opacity: 1;
+	right: 0;
 }

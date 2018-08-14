@@ -157,7 +157,8 @@ nav #main-menu ul li a:hover {
 #about img#avatar {
 	float: right;
 	width: 320px;
-	height: 400px;
+	height: 350px;
+	margin-top: 50px;
 }
 /*end style about*/
 

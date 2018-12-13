@@ -6,10 +6,11 @@ body {
   font-weight: 300;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
   line-height: 1.5;
   text-align: left; }
+
+.site-section {
+  padding: 5em 0; }
 
 .btn-mybtn {
   color: #fff;
@@ -21,6 +22,28 @@ body {
   .btn-mybtn:hover, .btn-mybtn :active, .btn-mybtn :focus {
     background: #4ebe2a;
     color: #fff; }
+
+.section-heading {
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 10; }
+  .section-heading h2 {
+    position: relative;
+    font-weight: 200;
+    padding-top: 20px;
+    font-size: 35px;
+    color: #2c3e50; }
+    .section-heading h2:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 2px;
+      width: 50px;
+      background: #57d131;
+      z-index: -1; }
+    .section-heading h2 strong {
+      font-weight: 800; }
 
 .myNavbar {
   border: none;
@@ -76,9 +99,13 @@ body {
     color: rgba(255, 255, 255, 0.7); }
 
 .about {
-  padding: 5em 0; }
+  padding: 5em 0 0 0; }
   .about .about-typed {
-    width: 100%; }
+    border: 1px solid #4ebe2a;
+    border-radius: 5px;
+    height: 540px;
+    width: 100%;
+    height: 100%; }
     .about .about-typed .var-highlight {
       color: #C0AD60; }
     .about .about-typed .string-highlight {
@@ -105,26 +132,6 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
-  .about .section-heading {
-    margin-bottom: 30px;
-    position: relative;
-    z-index: 10; }
-    .about .section-heading h2 {
-      position: relative;
-      font-weight: 200;
-      padding-top: 20px;
-      font-size: 30px; }
-      .about .section-heading h2:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 2px;
-        width: 50px;
-        background: #57d131;
-        z-index: -1; }
-      .about .section-heading h2 strong {
-        font-weight: 700; }
   .about p {
     font-weight: 200; }
     .about p .lead {
@@ -135,5 +142,87 @@ body {
       border-radius: 100px;
       text-transform: uppercase;
       letter-spacing: .1em; }
+
+.mySkill {
+  padding: 50px 0; }
+  .mySkill .skill h3 {
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: 200; }
+  .mySkill .progress {
+    overflow: visible;
+    margin-bottom: 26px;
+    height: 6px; }
+    .mySkill .progress .progress-bar {
+      background-color: #57d131;
+      position: relative;
+      border-radius: 4px;
+      text-align: left;
+      transition-duration: unset; }
+      .mySkill .progress .progress-bar span {
+        background-color: #57d131;
+        position: absolute;
+        bottom: -20px;
+        font-size: 10px;
+        line-height: 10px;
+        padding: 2px 3px 2px 4px;
+        right: -1.4em;
+        border-radius: 2px; }
+        .mySkill .progress .progress-bar span::after {
+          bottom: 100%;
+          left: 50%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: rgba(255, 255, 255, 0);
+          border-bottom-color: #57d131;
+          border-width: 5px;
+          margin-left: -5px; }
+
+.resume .section-heading h2:before {
+  left: 50%;
+  transform: translateX(-50%); }
+.resume h2 {
+  color: #2c3e50;
+  font-weight: 200;
+  font-size: 2rem; }
+.resume .resume-item {
+  padding: 40px;
+  background: #fff;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  border: 4px solid transparent; }
+  .resume .resume-item .date {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: .1em;
+    color: #b3bdc6;
+    text-transform: uppercase; }
+    .resume .resume-item .date .icon-calendar {
+      font-family: 'icomoon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1; }
+      .resume .resume-item .date .icon-calendar::before {
+        content: "\e979"; }
+  .resume .resume-item h3 {
+    color: #2c3e50;
+    font-weight: 200; }
+  .resume .resume-item .school {
+    color: #2c3e50;
+    display: block;
+    font-size: 20px; }
+  .resume .resume-item:hover, .resume .resume-item :focus {
+    border: 4px solid #57d131;
+    -webkit-box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=style.css.map */

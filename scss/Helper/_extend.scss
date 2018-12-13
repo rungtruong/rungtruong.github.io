@@ -1,0 +1,41 @@
+.site-section {
+    padding: 5em 0;
+}
+.btn-mybtn{
+    color: #fff;
+    background-color: #57d131;
+    border-color: #57d131;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    &:hover, :active, :focus {
+        background: #4ebe2a;
+        color: #fff;
+    }
+}
+
+.section-heading {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
+    h2 {
+        position: relative;
+        font-weight: 200;
+        padding-top: 20px;
+        font-size: 35px;
+        color: #2c3e50;
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 2px;
+            width: 50px;
+            background: #57d131;
+            z-index: -1;
+        }
+        strong {
+            font-weight: 800;
+        }
+    }        
+}

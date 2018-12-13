@@ -1,0 +1,57 @@
+.resume{
+    .section-heading {       
+        h2 {            
+            &:before{                
+                left: 50%;     
+                transform: translateX(-50%);           
+            }            
+        }        
+    }
+    h2{
+        color: #2c3e50;
+        font-weight: 200;   
+        font-size: 2rem;
+    }
+    .resume-item {
+        padding: 40px;
+        background: #fff;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease;
+        border: 4px solid transparent;
+        .date {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 12px;
+            letter-spacing: .1em;
+            color: #b3bdc6;
+            text-transform: uppercase;
+            .icon-calendar{               
+                font-family: 'icomoon' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                &::before{
+                    content: "\e979";
+                }
+            }
+        }
+        h3{
+            color: #2c3e50;
+            font-weight: 200;
+        }
+        .school {
+            color: #2c3e50;       
+            display: block;
+            font-size: 20px;
+        }
+        &:hover,:focus{
+            border: 4px solid #57d131;
+            -webkit-box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
+        }
+    }
+}

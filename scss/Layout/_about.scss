@@ -1,7 +1,11 @@
 .about{
-    padding: 5em 0;
+    padding: 5em 0 0 0;
     .about-typed {
-        width: 100%;        
+        border: 1px solid #4ebe2a;
+        border-radius: 5px;
+        height: 540px;    
+        width: 100%;   
+        height: 100%;     
         .var-highlight{
             color: #C0AD60;
         }
@@ -36,30 +40,7 @@
         }   
     }
     
-    .section-heading {
-        margin-bottom: 30px;
-        position: relative;
-        z-index: 10;
-        h2 {
-            position: relative;
-            font-weight: 200;
-            padding-top: 20px;
-            font-size: 30px;
-            &:before{
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 2px;
-                width: 50px;
-                background: #57d131;
-                z-index: -1;
-            }
-            strong {
-                font-weight: 700;
-            }
-        }        
-    }
+    
     p {
         font-weight: 200;
         .lead {

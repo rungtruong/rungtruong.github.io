@@ -6,7 +6,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-  
+
   <!--Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Abril+Fatface" rel="stylesheet">
   <link href="https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css" rel="stylesheet">
@@ -15,26 +15,25 @@
     crossorigin="anonymous">
   <!-- Font  -->
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
   <!-- Icon -->
   <link rel="stylesheet" href="css/ionicons.min.css">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- CSS reset -->
-  <link rel="stylesheet" href="css/reset.css">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
   <!-- Resource style -->
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/style.css">
-
-
-
   <!-- Font  -->
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
   <script src="js/modernizr.js"></script>
+
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myMenu" data-offset="200">
   <!-- HEADER -->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light myNavbar" id="menu">
+  <header id="header" class="header ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light myNavbar" id="myMenu">
       <div class="container">
         <a class="navbar-brand" href="#">FOREST</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#myNavMenu"
@@ -49,17 +48,17 @@
               <a class="nav-link" href="#about">ABOUT</a>
               <div class="lineLeft"></div>
             </li>
+            <li class="nav-item animated zoomIn  delay-400ms">
+              <div class="lineRight"></div>
+              <div class="clear"></div>
+              <a class="nav-link" href="#mySkill">SKILLS</a>
+              <div class="lineLeft"></div>
+            </li>
             <li class="nav-item animated zoomIn  delay-200ms ">
               <div class="lineRight"></div>
               <div class="clear"></div>
               <div class="clear"></div>
-              <a class="nav-link" href="#work">WORK</a>
-              <div class="lineLeft"></div>
-            </li>
-            <li class="nav-item animated zoomIn  delay-400ms">
-              <div class="lineRight"></div>
-              <div class="clear"></div>
-              <a class="nav-link" href="#skills">SKILLS</a>
+              <a class="nav-link" href="#resume">RESUME</a>
               <div class="lineLeft"></div>
             </li>
             <li class="nav-item animated zoomIn  delay-600ms">
@@ -98,7 +97,7 @@
             <span id="typed"></span></div>
           </p>
           <p class="animated fadeInDown delay-1000ms my-5 text-responsive txtSub">I love code, i love to develop, my
-            motto is "do it with passion, or not at all". <br> I make awsome websites</p>
+            motto is "Do it with passion, or not at all". <br> I make awsome websites</p>
           <p><a href="#about" class="animated fadeInDown delay-1000ms btn btn-mybtn px-4 py-3">More On Me</a></p>
         </div>
       </div>
@@ -110,38 +109,151 @@
   <section id="about" class="about">
     <div class="container">
       <div class="row my-5 justify-content-between">
-        <div class="col-lg-8 pr-lg-5 mb-5 mb-lg-0 about-typed">
+        <div class="col-lg-8 pr-lg-5 mb-5 mb-lg-0 about-typed pt-5">
           <pre id="typewriter" class="textTyped">
-    <span class="var-highlight">var</span> object = {
-        name: <span class="string-highlight">'Trương Đại Hai Rừng'</span>,
-        type: <span class="string-highlight">'Front End Developer'</span>,
-        location: <span class="string-highlight">'HCM City'</span>,
-        properties:[<span class="string-highlight">'Javascript'</span>,
-                    <span class="string-highlight">'HTML'</span>,
-                    <span class="string-highlight">'CSS/SASS'</span>
-                    <span class="string-highlight">'BOOTSTRAP'</span>
-                    <span class="string-highlight">'...'</span>];
-        }; 
+  <span class="var-highlight">var</span> object = {
+      name: <span class="string-highlight">'Trương Đại Hai Rừng'</span>,
+      type: <span class="string-highlight">'Front End Developer'</span>,
+      location: <span class="string-highlight">'HCM City'</span>,
+      properties:[<span class="string-highlight">'HTML5'</span>,
+                  <span class="string-highlight">'CSS3/SASS'</span>,
+                  <span class="string-highlight">'Javascript/jQuery'</span>
+                  <span class="string-highlight">'BOOTSTRAP'</span>
+                  <span class="string-highlight">'...'</span>];
+      }; 
           </pre>
         </div>
 
         <div class="col-lg-4 pl-lg-5">
-          <div class="section-heading">
+          <div class="section-heading animated fadeInDown">
             <h2>About <strong>Me</strong></h2>
           </div>
-          <p class="lead mb-3">Hi! I'm Rung. I'm a web developer live in Ho Chi Minh City.</p>
-          <p class="mb-5">I build beautiful websites and make people feel awesome. My design principles are clean,
+          <p class="lead mb-3 animated fadeInDown">Hi! I'm Rung. I'm a web developer live in Ho Chi Minh City.</p>
+          <p class="mb-5 animated fadeInDown delay-1000ms">I build beautiful websites and make people feel awesome. My
+            design principles are clean,
             unique and elegant design.</p>
 
           <p>
-            <a href="#contact" class="btn btn-mybtn px-4 py-2 btn-sm smoothscroll">Hire Me</a>
-            <a href="#" class="btn btn-secondary px-4 py-2 btn-sm">Download CV</a>
+            <a href="#contact" class="animated fadeInDown delay-1000ms btn btn-mybtn px-4 py-2 btn-sm smoothscroll">Hire
+              Me</a>
+            <a href="#" class="animated fadeInDown delay-1000ms btn btn-secondary px-4 py-2 btn-sm">Download CV</a>
           </p>
         </div>
       </div>
     </div>
   </section>
   <!-- END ABOUT -->
+
+  <!-- MY SKILL -->
+  <section id="mySkill" class="mySkill">
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-md-3 mb-3">
+          <div class="section-heading animated fadeInLeft">
+            <h2>My <strong>Skills</strong></h2>
+          </div>
+        </div>
+        <div class="col-md-9 animated fadeInRight">
+          <div class="skill">
+            <h3>Design</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%"
+                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <h3>HTML5</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 98%"
+                aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                <span>98%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <h3>CSS3</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 97%"
+                aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">
+                <span>97%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <h3>JavaScript/jQuery</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 88%"
+                aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                <span>88%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <h3>Bootstrap</h3>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 92%"
+                aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                <span>92%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END MY SKILL -->
+
+  <!-- RESUME -->
+  <section class="site-section bg-light resume" id="resume">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mb-5">
+          <div class="section-heading text-center animated fadeInUp">
+            <h2>My <strong>Resume</strong></h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-5 animated fadeInLeft">Education</h2>
+
+          <div class="resume-item mb-4 animated fadeInUp delay-1000ms">
+            <span class="date"><span class="icon-calendar"></span> September 2018 - Present</span>
+            <h3>Front End Programming Expert</h3>
+            <p>Meet all recruitment needs through learning the Front End latest technology on Front End</p>
+            <span class="school">CyberSoft Academy</span>
+          </div>
+
+          <div class="resume-item mb-4 animated fadeInUp delay-1000ms">
+            <span class="date"><span class="icon-calendar"></span> September 2012 - December 2016.</span>
+            <h3>Electronics and Telecommunications Engineer</h3>
+            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+            <span class="school">Industrial University of Ho Chi Minh City</span>
+          </div>
+
+          
+
+        </div>
+        <div class="col-md-6">
+
+
+          <h2 class="mb-5 animated fadeInRight">Experience</h2>
+
+          <div class="resume-item mb-4 animated fadeInUp delay-1000ms">
+            <span class="date"><span class="icon-calendar"></span> September 2016 - December 2018.</span>
+            <h3>Engineer</h3>
+            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+            <span class="school">Kantar Media VN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END RESUME -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -163,7 +275,13 @@
       typeSpeed: 100,
     });
   </script>
-
+  <!-- <script>
+    $(document).on('ready', function () {
+      $('.progress .progress-bar').css("width", function () {
+        return $(this).attr("aria-valuenow") + "%";
+      })
+    })
+  </script> -->
   <script src="./js/txt-type.js"></script>
   <script src="./js/main.js"></script>
 

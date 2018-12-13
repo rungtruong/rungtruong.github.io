@@ -15,14 +15,15 @@
     crossorigin="anonymous">
   <!-- Font  -->
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  
   <!-- Icon -->
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
   <link rel="stylesheet" href="css/ionicons.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- CSS reset -->
   <!-- <link rel="stylesheet" href="css/reset.css"> -->
   <!-- Resource style -->
-  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="./css/animations.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- Font  -->
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
@@ -32,42 +33,42 @@
 
 <body data-spy="scroll" data-target="#myMenu" data-offset="200">
   <!-- HEADER -->
-  <header id="header" class="header ">
+  <header id="header" class="header animatedParent">
     <nav class="navbar navbar-expand-lg navbar-light bg-light myNavbar" id="myMenu">
       <div class="container">
-        <a class="navbar-brand" href="#">FOREST</a>
+        <a class="navbar-brand" href="index.html">FOREST</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#myNavMenu"
           aria-controls="myNavMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-md-center" id="myNavMenu">
           <ul class="navbar-nav">
-            <li class="nav-item animated zoomIn view overlay">
+            <li class="nav-item animated bounceIn overlay">
               <div class="lineRight"></div>
               <div class="clear"></div>
               <a class="nav-link" href="#about">ABOUT</a>
               <div class="lineLeft"></div>
             </li>
-            <li class="nav-item animated zoomIn  delay-400ms">
+            <li class="nav-item animated bounceIn delay-400ms">
               <div class="lineRight"></div>
               <div class="clear"></div>
               <a class="nav-link" href="#mySkill">SKILLS</a>
               <div class="lineLeft"></div>
             </li>
-            <li class="nav-item animated zoomIn  delay-200ms ">
+            <li class="nav-item animated bounceIn delay-200ms ">
               <div class="lineRight"></div>
               <div class="clear"></div>
               <div class="clear"></div>
               <a class="nav-link" href="#resume">RESUME</a>
               <div class="lineLeft"></div>
             </li>
-            <li class="nav-item animated zoomIn  delay-600ms">
+            <li class="nav-item animated bounceIn delay-600ms">
               <div class="lineRight"></div>
               <div class="clear"></div>
               <a class="nav-link" href="#portfolio">PORTFOLIO</a>
               <div class="lineLeft"></div>
             </li>
-            <li class="nav-item animated zoomIn  delay-800ms">
+            <li class="nav-item animated bounceIn delay-800ms">
               <div class="lineRight"></div>
               <div class="clear"></div>
               <a class="nav-link" href="#contact">CONTACT</a>
@@ -81,7 +82,7 @@
   <!-- END HEADER -->
 
   <!-- INTRO -->
-  <section class="intro">
+  <section class="intro animatedParent">
     <video autoplay loop muted playsinline>
       <source src="./videos/intro2.mp4" type="video/mp4" />
     </video>
@@ -106,9 +107,9 @@
   <!-- END INTRO -->
 
   <!-- ABOUT -->
-  <section id="about" class="about">
+  <section id="about" class="about ">
     <div class="container">
-      <div class="row my-5 justify-content-between">
+      <div class="row my-5 justify-content-between animatedParent">
         <div class="col-lg-8 pr-lg-5 mb-5 mb-lg-0 about-typed pt-5">
           <pre id="typewriter" class="textTyped">
   <span class="var-highlight">var</span> object = {
@@ -145,7 +146,7 @@
   <!-- END ABOUT -->
 
   <!-- MY SKILL -->
-  <section id="mySkill" class="mySkill">
+  <section id="mySkill" class="mySkill animatedParent">
     <div class="container">
       <div class="row pt-5">
         <div class="col-md-3 mb-3">
@@ -212,7 +213,7 @@
   <!-- RESUME -->
   <section class="site-section bg-light resume" id="resume">
     <div class="container">
-      <div class="row">
+      <div class="row animatedParent">
         <div class="col-md-12 mb-5">
           <div class="section-heading text-center animated fadeInUp">
             <h2>My <strong>Resume</strong></h2>
@@ -221,7 +222,7 @@
         <div class="col-md-6">
           <h2 class="mb-5 animated fadeInLeft">Education</h2>
 
-          <div class="resume-item mb-4 animated fadeInUp delay-1000ms">
+          <div class="resume-item mb-4 animated fadeInUp delay-800ms">
             <span class="date"><span class="icon-calendar"></span> September 2018 - Present</span>
             <h3>Front End Programming Expert</h3>
             <p>Meet all recruitment needs through learning the Front End latest technology on Front End</p>
@@ -235,7 +236,7 @@
             <span class="school">Industrial University of Ho Chi Minh City</span>
           </div>
 
-          
+
 
         </div>
         <div class="col-md-6">
@@ -243,7 +244,7 @@
 
           <h2 class="mb-5 animated fadeInRight">Experience</h2>
 
-          <div class="resume-item mb-4 animated fadeInUp delay-1000ms">
+          <div class="resume-item mb-4 animated fadeInUp delay-800ms">
             <span class="date"><span class="icon-calendar"></span> September 2016 - December 2018.</span>
             <h3>Engineer</h3>
             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
@@ -254,6 +255,75 @@
     </div>
   </section>
   <!-- END RESUME -->
+
+  <!-- PORTFOLIO -->
+  <section class="site-section portfolio border-top" id="portfolio">
+    <div class="container">
+      <div class="row animatedParent">
+        <div class="section-heading text-center col-md-12 animated fadeInUp">
+          <h2>Featured <strong>Portfolio</strong></h2>
+        </div>
+      </div>
+      <div class="row grid animatedParent">
+        <div class="portfolio-item col-sm-4 animated fadeInRight delay-400ms">
+          <div class="portfolio_img">
+            <a href="./img/layoutBake.png"><img class="image img-fluid" src="img/bake_banner.png" alt=""></a>
+          </div>
+          <div class="portfolio_title">
+            <h4>Best Bake Here</h4>
+            <div class="cat">Bake Layout</div>
+          </div>
+        </div>
+        <div class="portfolio-item col-sm-4 animated fadeInRight delay-800ms">
+            <div class="portfolio_img">
+              <a href="img/layout-moviestar.png"><img class="image img-fluid" src="./img/moviestar_banner.png" alt=""></a>
+            </div>
+            <div class="portfolio_title">
+              <h4>Movie Star</h4>
+              <div class="cat">Movie Star Layout</div>
+            </div>
+        </div>
+        <div class="portfolio-item col-sm-4 animated fadeInRight delay-1000ms">
+            <div class="portfolio_img">
+              <a href="img/layout-merged.png"><img class="image img-fluid" src="./img/merged_banner.png" alt=""></a>
+            </div>
+            <div class="portfolio_title">
+              <h4>Merged</h4>
+              <div class="cat">Merged Layout</div>
+            </div>
+        </div>
+        <div class="portfolio-item col-sm-4 animated fadeInLeft delay-400ms">
+            <div class="portfolio_img">
+              <a href="../Page/Massive/index.html"><img class="image img-fluid" src="./img/massive-banner.png" alt=""></a>
+            </div>
+            <div class="portfolio_title">
+              <h4>Massive</h4>
+              <div class="cat">Massive Layout</div>
+            </div>
+        </div>
+        <div class="portfolio-item col-sm-4 animated fadeInLeft delay-800ms">
+            <div class="portfolio_img">
+              <a href="./img/layout-uber.png"><img class="image img-fluid" src="./img/uber_banner.png" alt=""></a>
+            </div>
+            <div class="portfolio_title">
+              <h4>Uber</h4>
+              <div class="cat">Uber Layout</div>
+            </div>
+        </div>
+        <div class="portfolio-item col-sm-4 animated fadeInLeft delay-1000ms">
+            <div class="portfolio_img">
+              <a href="./img/layout-homestead.png"><img class="image img-fluid" src="./img/homestead_banner.png" alt=""></a>
+            </div>
+            <div class="portfolio_title">
+              <h4>HomeStead</h4>
+              <div class="cat">HomeStead Layout</div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END PORTFOLIO -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -275,13 +345,7 @@
       typeSpeed: 100,
     });
   </script>
-  <!-- <script>
-    $(document).on('ready', function () {
-      $('.progress .progress-bar').css("width", function () {
-        return $(this).attr("aria-valuenow") + "%";
-      })
-    })
-  </script> -->
+  <script src="./js/css3-animate-it.js"></script>
   <script src="./js/txt-type.js"></script>
   <script src="./js/main.js"></script>
 

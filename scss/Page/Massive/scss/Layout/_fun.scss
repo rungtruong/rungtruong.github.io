@@ -1,0 +1,29 @@
+.fun-factor{
+    background-color:#1b1b1b;
+
+    .fun-factor-item{
+        text-align: center;
+        color: $color-white-0;
+        padding: 100px 0;
+        .icon{
+            display: inline-block;        
+            margin-top: 0;
+            margin-bottom: 10px;
+            
+            i{
+                padding-right: 10px;
+                font-size: 36px;
+            }
+            h1{
+                display: inline-block;
+                margin-bottom: 0;
+                font-size: 36px;
+            }
+        }
+        .fun-info{
+            position: relative;
+            padding-left: 0;
+        }
+        
+    }
+}

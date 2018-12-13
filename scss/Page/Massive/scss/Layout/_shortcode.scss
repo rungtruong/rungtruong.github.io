@@ -1,0 +1,73 @@
+.shortcode{
+    background-image: url(../img/pattern-2.png);
+    background-repeat: repeat;
+    /* background-size: cover; */
+    background-attachment: fixed;
+    .myNavtab{
+        margin: 0 auto !important;
+        padding: 10rem 0;
+        .nav{
+            justify-content: left;
+        }
+        .nav-tabs { 
+            border-bottom: none;           
+            .nav-item {
+                margin: 10px;
+                position: relative;
+                display: block;
+                .nav-link {
+                    display: block;
+                    padding: 35px 70px;
+                    position: relative;
+                    transition: all .3s ease;
+                    color: #434343;
+                    border-radius: 0;
+                    background: rgba(34, 34, 34, .05);
+                    border: none;
+                    &:after {
+                        position: absolute;
+                        bottom: -10px;
+                        left: 50%;
+                        width: 0;
+                        height: 0;
+                        margin-left: -10px;
+                        content: "";
+                        -webkit-transition: all .3s ease;
+                        transition: all .3s ease;
+                        opacity: 0;
+                        border-width: 10px 10px 0 10px;
+                        border-style: solid;
+                        border-color: #fff transparent transparent transparent;
+                    }    
+                   i{
+                       font-size: 36px;
+                   }
+                   &:hover, &.active{                    
+                        background-color: #ffffff;
+                        border: none;    
+                        &:after{
+                            opacity: 100;
+                        }
+                    }
+                }               
+                
+            }
+        }
+    }
+    .myTab-content{
+        margin: 40px 0;
+        span{
+            letter-spacing: 2px;
+            color: #7e7e7e;            
+            font-size: 14px;            
+        }
+        h2{
+            margin-bottom: 0;
+            letter-spacing: 2px;
+            font-weight: normal;
+            font-size: 30px;
+        }
+    }
+
+    
+}

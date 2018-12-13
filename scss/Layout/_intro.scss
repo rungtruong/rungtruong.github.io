@@ -1,0 +1,32 @@
+.intro{
+    
+    
+    video {    
+        height: 100vh;
+        width: 100%;
+        object-fit: fill;
+        position: relative;
+        display: block;
+    }
+    .intro-text{       
+        width: 100%;
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        font-size: 50px;
+        line-height: 50px;
+        color: #fff;
+       
+        .txtSub{
+            font-size: 1.25rem; 
+            font-weight: 200;
+            line-height: 2; 
+            max-width: 640px; 
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.7); 
+        }       
+        
+    }
+}

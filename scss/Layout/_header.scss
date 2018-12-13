@@ -1,0 +1,38 @@
+.myNavbar{
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    background: none;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    z-index: 200;
+    background: #fff;    
+    background: transparent !important;
+    
+    .navbar-brand {
+        display: inline-block;
+        border: 2px solid #fff;
+        padding: 5px 20px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+    }
+    .navbar-nav{
+        li{
+            a {
+                color: #fff !important;
+                padding: 15px 20px !important;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: .1em;
+                position: relative;
+                text-transform: uppercase;
+                letter-spacing: .2em;
+            }
+        }
+    }        
+       
+}

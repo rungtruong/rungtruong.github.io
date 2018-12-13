@@ -1,7 +1,0 @@
-User-agent: rung.iuh
-Disallow: /nogooglebot/
-
-User-agent: *
-Allow: /
-
-Sitemap: https://rungtruong.github.io

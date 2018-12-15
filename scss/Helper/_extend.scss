@@ -39,3 +39,31 @@
         }
     }        
 }
+.social{
+    .social-item {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #b3bdc6;
+        position: relative;
+        border-radius: 50%;
+        font-size: 22px;
+        margin: 0 10px;
+        color: #57d131;
+        background-color: transparent;  
+        transition: .3s all;  
+        &:hover{
+            background-color: #57d131;
+            color: #fff;
+        }
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;            
+            transform: translate(-50%, -50%);
+        }
+    }  
+    a {
+        text-decoration: none;
+    }    
+}

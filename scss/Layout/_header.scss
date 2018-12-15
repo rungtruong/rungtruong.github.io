@@ -19,6 +19,11 @@
         color: #fff;
         text-transform: uppercase;
         letter-spacing: .2em;
+        transition: .3s all;  
+        &:hover, :active, :focus {
+            background: #4ebe2a;
+            color: #fff;
+        }
     }
     .navbar-nav{
         li{
@@ -30,7 +35,12 @@
                 letter-spacing: .1em;
                 position: relative;
                 text-transform: uppercase;
-                letter-spacing: .2em;
+                letter-spacing: .2em;               
+            }
+            &:hover, :active, :focus {
+                a{
+                    color: #57d131 !important;
+                }
             }
         }
     }        

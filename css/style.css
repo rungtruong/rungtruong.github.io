@@ -1,13 +1,17 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
+  position: relative;
   background: #fff;
   color: #798a9a;
   line-height: 1.7;
   font-size: 16px;
   font-weight: 300;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
-  text-align: left; }
+  text-align: left;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 .site-section {
   padding: 5em 0; }
@@ -45,6 +49,29 @@ body {
     .section-heading h2 strong {
       font-weight: 800; }
 
+.social .social-item {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #b3bdc6;
+  position: relative;
+  border-radius: 50%;
+  font-size: 22px;
+  margin: 0 10px;
+  color: #57d131;
+  background-color: transparent;
+  transition: .3s all; }
+  .social .social-item:hover {
+    background-color: #57d131;
+    color: #fff; }
+  .social .social-item span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+.social a {
+  text-decoration: none; }
+
 .myNavbar {
   border: none;
   -webkit-box-shadow: none;
@@ -64,7 +91,11 @@ body {
     padding: 5px 20px;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: .2em; }
+    letter-spacing: .2em;
+    transition: .3s all; }
+    .myNavbar .navbar-brand:hover, .myNavbar .navbar-brand :active, .myNavbar .navbar-brand :focus {
+      background: #4ebe2a;
+      color: #fff; }
   .myNavbar .navbar-nav li a {
     color: #fff !important;
     padding: 15px 20px !important;
@@ -74,29 +105,33 @@ body {
     position: relative;
     text-transform: uppercase;
     letter-spacing: .2em; }
+  .myNavbar .navbar-nav li:hover a, .myNavbar .navbar-nav li :active a, .myNavbar .navbar-nav li :focus a {
+    color: #57d131 !important; }
 
-.intro video {
-  height: 100vh;
-  width: 100%;
-  object-fit: fill;
-  position: relative;
-  display: block; }
-.intro .intro-text {
-  width: 100%;
-  position: absolute;
-  top: 56%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  line-height: 50px;
-  color: #fff; }
-  .intro .intro-text .txtSub {
-    font-size: 1.25rem;
-    font-weight: 200;
-    line-height: 2;
-    max-width: 640px;
-    margin: 0 auto;
-    color: rgba(255, 255, 255, 0.7); }
+.intro {
+  position: relative; }
+  .intro video {
+    height: 100vh;
+    width: 100%;
+    object-fit: fill;
+    position: relative;
+    display: block; }
+  .intro .intro-text {
+    width: 100%;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    line-height: 50px;
+    color: #fff; }
+    .intro .intro-text .txtSub {
+      font-size: 1.25rem;
+      font-weight: 200;
+      line-height: 2;
+      max-width: 640px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.7); }
 
 .about {
   padding: 5em 0 0 0; }
@@ -257,5 +292,34 @@ body {
     font-size: 12px;
     text-transform: uppercase;
     color: #cccccc; }
+
+.contact .section-heading h2:before {
+  left: 50%;
+  transform: translateX(-50%); }
+.contact h3 {
+  color: #2c3e50;
+  font-weight: 200;
+  font-size: 1.75rem; }
+.contact .form-control {
+  border: none !important;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) !important; }
+.contact .site-contact-details, .contact .site-contact-details li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 20px; }
+  .contact .site-contact-details span, .contact .site-contact-details li span {
+    color: #2c3e50;
+    letter-spacing: .1em;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block; }
+
+.footer {
+  padding: 3em 0; }
+  .footer p:last-child {
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

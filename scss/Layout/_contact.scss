@@ -1,0 +1,35 @@
+.contact{
+    .section-heading {       
+        h2 {            
+            &:before{                
+                left: 50%;     
+                transform: translateX(-50%);           
+            }            
+        }        
+    }
+    h3{
+        color: #2c3e50;
+        font-weight: 200;    
+        font-size: 1.75rem;
+    }
+    .form-control {
+        border: none !important;
+        -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) !important;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) !important;
+    }
+    .site-contact-details, .site-contact-details li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 20px;
+        span {
+            color: #2c3e50;
+            letter-spacing: .1em;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            display: block;
+        }
+    }
+
+}

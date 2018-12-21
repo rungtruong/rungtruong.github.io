@@ -1,9 +1,11 @@
 .contact{
+    overflow: hidden;
     .section-heading {       
         h2 {            
             &:before{                
                 left: 50%;     
-                transform: translateX(-50%);           
+                -webkit-transform: translateX(-50%);     
+                        transform: translateX(-50%);           
             }            
         }        
     }

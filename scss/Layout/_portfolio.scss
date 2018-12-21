@@ -1,14 +1,17 @@
-.portfolio{
+.portfolio{    
+    overflow: hidden;
     .section-heading {       
         h2 {            
             &:before{                
                 left: 50%;     
-                transform: translateX(-50%);           
+                -webkit-transform: translateX(-50%);     
+                        transform: translateX(-50%);           
             }            
         }        
     }
     .portfolio-item{
         margin: 20px 0;
+        padding: 20px;
         text-align: center;
         h4 {
             font-size: 20px;       
@@ -45,5 +48,10 @@
                 color: #cccccc;
             }
         }        
+        &:hover,:focus{
+            border: 4px solid #57d131;
+            -webkit-box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
+        }
     }   
 }

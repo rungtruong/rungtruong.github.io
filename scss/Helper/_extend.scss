@@ -1,16 +1,20 @@
 .site-section {
     padding: 5em 0;
 }
-.btn-mybtn{
-    color: #fff;
+.btn-mybtn{    
     background-color: #57d131;
-    border-color: #57d131;
-    border-radius: 100px;
+    border: 1px solid transparent;    
     text-transform: uppercase;
     letter-spacing: .1em;
+    color: #fff;
+    border-radius: 100px;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
     &:hover, :active, :focus {
-        background: #4ebe2a;
         color: #fff;
+        background-color: #4ec22a;
+        -webkit-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
 }
 
@@ -51,6 +55,7 @@
         margin: 0 10px;
         color: #57d131;
         background-color: transparent;  
+        -webkit-transition: .3s all;  
         transition: .3s all;  
         &:hover{
             background-color: #57d131;
@@ -60,10 +65,43 @@
             position: absolute;
             top: 50%;
             left: 50%;            
-            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);            
+                    transform: translate(-50%, -50%);
         }
     }  
     a {
         text-decoration: none;
     }    
 }
+
+
+@-webkit-keyframes btnTransferLeft{
+    0%{
+        width: 0%;
+    }
+    10%{
+        width: 10%;
+    }
+    50%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+    }
+    }
+
+
+@keyframes btnTransferLeft{
+    0%{
+        width: 0%;
+    }
+    10%{
+        width: 10%;
+    }
+    50%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+    }
+    }

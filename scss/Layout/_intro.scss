@@ -10,6 +10,7 @@
         display: block;
     }
     .intro-text{       
+        overflow: hidden;
         width: 100%;
         position: absolute;
         top: 56%;
@@ -17,7 +18,7 @@
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
 
-        font-size: 70px;
+        font-size: 60px;
         line-height: 50px;
         color: #fff;
        
@@ -32,3 +33,12 @@
         
     }
 }
+@media screen and (max-width: 1024px) {
+    .intro-text{
+        font-size: 40px !important;
+              
+        .txtSub{
+            font-size: 0.8rem !important;             
+        } 
+    }
+  }

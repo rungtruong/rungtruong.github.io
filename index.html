@@ -28,18 +28,21 @@
   <link href='css/animations-ie-fix.css' rel='stylesheet'>
   <!-- <![endif] -->
 
-  <link rel="stylesheet" href="css/style.css">
+
   <!-- Font  -->
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
   <script src="js/modernizr.js"></script>
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <!-- HEADER -->
   <header id="header" class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top rgba-black-strong hoverable myNavbar" id="myMenu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light site-navbar  myNavbar" id="myMenu" data-spy="affix"
+      data-offset-top="123">
       <div class="container animatedParent">
         <a class="navbar-brand animated swing slowest" href="index.html">FOREST</a>
 
@@ -50,7 +53,7 @@
 
         <div class="collapse navbar-collapse justify-content-md-center" id="myNavMenu">
           <ul class="navbar-nav">
-            <li class="nav-item animated bounceIn delay-750 active">
+            <li class="nav-item animated bounceIn delay-750">
               <div class="lineRight"></div>
               <div class="clear"></div>
               <a class="nav-link" href="#about">ABOUT</a>
@@ -100,7 +103,7 @@
             <p><strong style="font-weight: 700">Rung Truong</strong></p>
             <p><strong style="font-weight: 200">a Front End Developer</strong></p>
           </div>
-          <div class="animated pulse text-responsive typeText">
+          <div class="animated pulse text-responsive typeText" id="fixMenu">
             <span style="font-weight: 200">Hi! I'm</span>
             <span id="typed"></span></div>
           </p>
@@ -161,7 +164,8 @@
           <p>
             <a href="#contact" class="animated fadeInLeft delay-1000 btn btn-mybtn px-4 py-2">Hire
               Me</a>
-            <a href="#" class="animated fadeInRight delay-1000 btn btn-secondary px-4 py-2">Download CV</a>
+            <a href="./RungTruong_FrontEnd.pdf" class="animated fadeInRight delay-1000 btn btn-secondary px-4 py-2">Download
+              CV</a>
           </p>
         </div>
       </div>
@@ -463,10 +467,26 @@
   <script src="./js/txt-type.js"></script>
 
   <script src="./js/main.js"></script>
+  <script>
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > $('#fixMenu').position().top) {
+        $('.header').addClass('header-scroll')
+      }
+      else {
+        $('.header').removeClass('header-scroll')
+      }
+    })
+  </script>
+
   <!-- <script>
     $(document).ready(function () {
-      $('body').scrollspy({ target: ".navbar", offset: 200 });
-    });
+      $('li').click(
+        function () {
+          $('li').removeClass('active');
+          $(this).addClass('active');
+        }
+      );
+    })
   </script> -->
 
 

@@ -1,3 +1,12 @@
+.header{ 
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+    width:100%;
+    transition:all 0.5s;
+
+    
 .myNavbar{
     border: none;
     -webkit-box-shadow: none;
@@ -11,6 +20,7 @@
     z-index: 200;
     background: #fff;    
     background: transparent !important;
+   
     
     .navbar-brand {
         margin: 0;
@@ -53,7 +63,7 @@
                 // transition: .5s all;
             }
             a {
-                color: #fff !important;
+                color: #fff;
                 padding: 15px 20px !important;
                 font-size: 14px;
                 font-weight: 400;
@@ -87,11 +97,27 @@
                 opacity: 1;
             }
         }
-    }        
+    }  
+    .navbar-toggler {
+        color: #fff !important;
+        border-color: #fff !important;
+    }      
        
+}
 }
 .clear{
     clear: both;
+}
+.header-scroll{
+    .myNavbar{   
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 200;
+        background-color:rgba(2, 1, 1, 0.472) !important;
+        border-bottom:3px solid #57d131;        
+        
+    }
 }
 
 @-webkit-keyframes lineTransferRight{
@@ -162,4 +188,41 @@
 100%{
     width: 100%;
 }
+}
+@media (max-width: 991.98px) {
+    .myNavbar{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 200;
+        background-color:rgba(2, 1, 1, 0.472) !important;
+        border-bottom:3px solid #57d131;
+        .bg-light {
+            background-color:rgba(155, 150, 144, 0.911) !important;
+          top: 0; 
+        }
+        .navbar-nav{
+            justify-content: right;
+            text-align: right;
+            li{
+                &:hover, :active, :focus {
+                    a{
+                        color: #57d131 !important;
+                    }
+                    .lineRight{
+                        opacity: 0 !important;  
+                    } 
+                    .lineLeft{
+                        opacity: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.active{
+    color: #57d131 !important;
 }

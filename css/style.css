@@ -97,78 +97,96 @@ body {
     width: 50%; }
   100% {
     width: 100%; } }
-.myNavbar {
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-radius: 0px;
-  margin-bottom: 0px;
-  background: none;
-  position: absolute;
-  top: 20px;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   width: 100%;
-  z-index: 200;
-  background: #fff;
-  background: transparent !important; }
-  .myNavbar .navbar-brand {
-    margin: 0;
-    display: inline-block;
-    padding: 5px 20px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    border: 2px solid #fff;
-    -webkit-transition: .3s all;
-    transition: .3s all; }
-    .myNavbar .navbar-brand:hover, .myNavbar .navbar-brand :active, .myNavbar .navbar-brand :focus {
+  transition: all 0.5s; }
+  .header .myNavbar {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    background: none;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    z-index: 200;
+    background: #fff;
+    background: transparent !important; }
+    .header .myNavbar .navbar-brand {
+      margin: 0;
+      display: inline-block;
+      padding: 5px 20px;
       color: #fff;
-      background: -webkit-gradient(linear, left top, right top, from(orange), to(#57d131));
-      background: linear-gradient(to right, orange, #57d131);
-      background-position: center center; }
-  .myNavbar .navbar-nav li {
-    position: relative;
-    overflow: hidden; }
-    .myNavbar .navbar-nav li .lineRight {
-      opacity: 0;
-      width: 0;
-      height: 1px;
-      background: -webkit-gradient(linear, right top, left top, from(orange), to(#57d131));
-      background: linear-gradient(to left, orange, #57d131); }
-    .myNavbar .navbar-nav li .lineLeft {
-      height: 1px;
-      width: 0;
-      background: -webkit-gradient(linear, left top, right top, from(orange), to(#57d131));
-      background: linear-gradient(to right, orange, #57d131);
-      opacity: 0; }
-    .myNavbar .navbar-nav li a {
-      color: #fff !important;
-      padding: 15px 20px !important;
-      font-size: 14px;
-      font-weight: 400;
-      letter-spacing: .1em;
-      position: relative;
       text-transform: uppercase;
       letter-spacing: .2em;
-      -webkit-transition: .5s all;
+      border: 2px solid #fff;
       -webkit-transition: .3s all;
       transition: .3s all; }
-    .myNavbar .navbar-nav li:hover a, .myNavbar .navbar-nav li :active a, .myNavbar .navbar-nav li :focus a {
-      color: #57d131 !important; }
-    .myNavbar .navbar-nav li:hover .lineRight, .myNavbar .navbar-nav li :active .lineRight, .myNavbar .navbar-nav li :focus .lineRight {
-      opacity: 1;
-      -webkit-animation: lineTransferRight .3s 0s linear;
-      animation: lineTransferRight .3s 0s linear;
-      width: 100%; }
-    .myNavbar .navbar-nav li:hover .lineLeft, .myNavbar .navbar-nav li :active .lineLeft, .myNavbar .navbar-nav li :focus .lineLeft {
-      opacity: 1;
-      -webkit-animation: lineTransferLeft .3s 0s linear;
-      animation: lineTransferLeft .3s 0s linear;
-      width: 100%; }
-    .myNavbar .navbar-nav li .active .lineLeft, .myNavbar .navbar-nav li .active .lineRight {
-      opacity: 1; }
+      .header .myNavbar .navbar-brand:hover, .header .myNavbar .navbar-brand :active, .header .myNavbar .navbar-brand :focus {
+        color: #fff;
+        background: -webkit-gradient(linear, left top, right top, from(orange), to(#57d131));
+        background: linear-gradient(to right, orange, #57d131);
+        background-position: center center; }
+    .header .myNavbar .navbar-nav li {
+      position: relative;
+      overflow: hidden; }
+      .header .myNavbar .navbar-nav li .lineRight {
+        opacity: 0;
+        width: 0;
+        height: 1px;
+        background: -webkit-gradient(linear, right top, left top, from(orange), to(#57d131));
+        background: linear-gradient(to left, orange, #57d131); }
+      .header .myNavbar .navbar-nav li .lineLeft {
+        height: 1px;
+        width: 0;
+        background: -webkit-gradient(linear, left top, right top, from(orange), to(#57d131));
+        background: linear-gradient(to right, orange, #57d131);
+        opacity: 0; }
+      .header .myNavbar .navbar-nav li a {
+        color: #fff;
+        padding: 15px 20px !important;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: .1em;
+        position: relative;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        -webkit-transition: .5s all;
+        -webkit-transition: .3s all;
+        transition: .3s all; }
+      .header .myNavbar .navbar-nav li:hover a, .header .myNavbar .navbar-nav li :active a, .header .myNavbar .navbar-nav li :focus a {
+        color: #57d131 !important; }
+      .header .myNavbar .navbar-nav li:hover .lineRight, .header .myNavbar .navbar-nav li :active .lineRight, .header .myNavbar .navbar-nav li :focus .lineRight {
+        opacity: 1;
+        -webkit-animation: lineTransferRight .3s 0s linear;
+        animation: lineTransferRight .3s 0s linear;
+        width: 100%; }
+      .header .myNavbar .navbar-nav li:hover .lineLeft, .header .myNavbar .navbar-nav li :active .lineLeft, .header .myNavbar .navbar-nav li :focus .lineLeft {
+        opacity: 1;
+        -webkit-animation: lineTransferLeft .3s 0s linear;
+        animation: lineTransferLeft .3s 0s linear;
+        width: 100%; }
+      .header .myNavbar .navbar-nav li .active .lineLeft, .header .myNavbar .navbar-nav li .active .lineRight {
+        opacity: 1; }
+    .header .myNavbar .navbar-toggler {
+      color: #fff !important;
+      border-color: #fff !important; }
 
 .clear {
   clear: both; }
+
+.header-scroll .myNavbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  background-color: rgba(2, 1, 1, 0.472) !important;
+  border-bottom: 3px solid #57d131; }
 
 @-webkit-keyframes lineTransferRight {
   0% {
@@ -214,6 +232,29 @@ body {
     width: 50%; }
   100% {
     width: 100%; } }
+@media (max-width: 991.98px) {
+  .myNavbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+    background-color: rgba(2, 1, 1, 0.472) !important;
+    border-bottom: 3px solid #57d131; }
+    .myNavbar .bg-light {
+      background-color: rgba(155, 150, 144, 0.911) !important;
+      top: 0; }
+    .myNavbar .navbar-nav {
+      justify-content: right;
+      text-align: right; }
+      .myNavbar .navbar-nav li:hover a, .myNavbar .navbar-nav li :active a, .myNavbar .navbar-nav li :focus a {
+        color: #57d131 !important; }
+      .myNavbar .navbar-nav li:hover .lineRight, .myNavbar .navbar-nav li :active .lineRight, .myNavbar .navbar-nav li :focus .lineRight {
+        opacity: 0 !important; }
+      .myNavbar .navbar-nav li:hover .lineLeft, .myNavbar .navbar-nav li :active .lineLeft, .myNavbar .navbar-nav li :focus .lineLeft {
+        opacity: 0 !important; } }
+.active {
+  color: #57d131 !important; }
+
 .intro {
   position: relative;
   overflow: hidden; }
@@ -225,13 +266,14 @@ body {
     position: relative;
     display: block; }
   .intro .intro-text {
+    overflow: hidden;
     width: 100%;
     position: absolute;
     top: 56%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-size: 70px;
+    font-size: 60px;
     line-height: 50px;
     color: #fff; }
     .intro .intro-text .txtSub {
@@ -242,6 +284,11 @@ body {
       margin: 0 auto;
       color: rgba(255, 255, 255, 0.7); }
 
+@media screen and (max-width: 1024px) {
+  .intro-text {
+    font-size: 40px !important; }
+    .intro-text .txtSub {
+      font-size: 0.8rem !important; } }
 .about {
   width: 100%;
   padding: 5em 0 0 0;

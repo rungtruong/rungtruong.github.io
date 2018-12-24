@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Star</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- User css -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="container mt-4">
+            <p class="text-right text-white ">
+                <i class="fa fa-phone mr-1"></i>
+                <span class="font-weight-bold border-right pr-2">0123456789</span>
+                <i class="fa fa-search ml-2"></i>
+            </p>
+            <nav class="navigation-bar">
+                <nav class="navbar navbar-dark navbar-expand-lg p-0">
+                    <a href="" class="navbar-brabd">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav ml-auto border-bottom">
+                            <li class="nav-item active">
+                                <a href="" class="nav-link">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">WHAT'S ON</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">SHORTCODES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">CONTACT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-toggle="modal" data-target="#modalDangky">SIGN UP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </nav>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- NAVIGATION BAR -->
+    <!-- <section class="navigation-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+                        <a href="" class="navbar-brabd">
+                            <img src="./img/logo.svg" alt="">
+                        </a>
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav ml-auto border-bottom">
+                                <li class="nav-item active">
+                                    <a href="" class="nav-link">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">WHAT'S ON</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">SHORTCODES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">NEWS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- END NAVIGATION BAR -->
+
+    <!-- CAROUSEL -->
+    <section class="slider">
+        <div class="carousel slide carousel-fade" data-ride="carousel" id="mycarousel">
+            <div class="carousel-inner">
+                <ol class="carousel-indicators justify-content-start">
+                    <li class="active" data-slide-to="0" data-target="#mycarousel"></li>
+                    <li data-slide-to="1" data-target="#mycarousel"></li>
+                    <li data-slide-to="2" data-target="#mycarousel"></li>
+                </ol>
+                <div class="carousel-item active item1">
+
+                    <div class="caption-carousel container">
+                        <span>ACTION, ADVENTURE, FANTASY</span>
+                        <h1 class="display-4">End of the World: Part I</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quibusdam dolores harum
+                            voluptates unde. Exercitationem blanditiis voluptas est dolorem a.</p>
+                        <div class="carousel-caption__trailer">
+                            <span>PG</span>
+                            <button class="btn-trailer ">
+
+                                <span><i class="fa fa-play"></i>PLAY TRAILER</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item item2">
+
+                    <div class="caption-carousel container">
+                        <span>ACTION, ADVENTURE, FANTASY</span>
+                        <h1 class="display-4">End of the World: Part II</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quibusdam dolores harum
+                            voluptates unde. Exercitationem blanditiis voluptas est dolorem a.</p>
+                        <div class="carousel-caption__trailer">
+                            <span>PG</span>
+                            <button class="btn-trailer">
+
+                                <span><i class="fa fa-play"></i>PLAY TRAILER</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item item3">
+
+                    <div class="caption-carousel container">
+                        <span>ACTION, ADVENTURE, FANTASY</span>
+                        <h1 class="display-4">End of the World: Part III</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quibusdam dolores harum
+                            voluptates unde. Exercitationem blanditiis voluptas est dolorem a.</p>
+                        <div class="carousel-caption__trailer">
+                            <span>PG</span>
+                            <button class="btn-trailer">
+
+                                <span><i class="fa fa-play"></i>PLAY TRAILER</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#mycarousel" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <i class="fa fa-angle-double-right "></i>
+            </a>
+            <a href="#mycarousel" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <i class="fa fa-angle-double-left"></i>
+            </a> -->
+        </div>
+    </section>
+    <!-- END CAROUSEL -->
+
+    <!-- NEW IN -->
+    <section class="newin">
+        <div class="container">
+            <h1>NEW IN</h1>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <article class="newin-item">
+                        <img src="./img/movie-1.jpg" alt="">
+                        <p>Hush</p>
+                        <span>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                    </article class="newin-item">
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <article class="newin-item">
+                        <img src="./img/movie-2.jpg" alt="">
+                        <p>Hush</p>
+                        <span>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <article class="newin-item">
+                        <img src="./img/movie-3.jpg" alt="">
+                        <p>Hush</p>
+                        <span>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <article class="newin-item">
+                        <img src="./img/movie-4.jpg" alt="">
+                        <p>Hush</p>
+                        <span>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END NEW IN -->
+
+    <!-- SHOW TIME -->
+    <section class="showtime">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#monday" role="tab" aria-controls="home"
+                        aria-selected="true">MON</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tuesday" role="tab" aria-controls="profile"
+                        aria-selected="false">TUE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#wednesday" role="tab" aria-controls="contact"
+                        aria-selected="false">WED</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row my-3 showtime__item">
+                        <div class="col-2">
+                            <img src="./img/movie-11.jpg" alt="" class="w-100 rounded">
+                        </div>
+                        <div class="col-10 ">
+                            <span>ACTION, ADVENTURE, FANTASY</span>
+                            <h1 class="my-1 lead">It's over</h1>
+                            <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ullam quidem maxime tempora</p>
+                            <p class="mb-0 d-block d-lg-none">Natus sequi minus ipsam unde accusantium. Tempore!</p>
+                            <a href="">Full Synopsis <i class="fa fa-angle-right ml-1"></i></a>
+                            <div class="d-flex justify-content-between align-items-ce">
+                                <div class="shoetime__item__viewing">
+                                    <i class="fa fa-clock-o"></i>
+                                    <span>Viewing times</span>
+                                    <button class="btn" disabled>14:25</button>
+                                    <button class="btn">14:25</button>
+                                    <button class="btn">14:25</button>
+                                    <button class="btn">14:25</button>
+
+                                </div>
+                                <div class="showtime__item__length">
+                                    <span>105 MINS</span>
+                                    <span>15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-3 showtime__item">
+                        <div class="col-2">
+                            <img src="./img/movie-13.jpg" alt="" class="w-100 rounded">
+                        </div>
+                        <div class="col-10 ">
+                            <span>ACTION, ADVENTURE, FANTASY</span>
+                            <h1 class="my-1 lead">It's over</h1>
+                            <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ullam quidem maxime tempora</p>
+                            <p class="mb-0 d-block d-lg-none">Natus sequi minus ipsam unde accusantium. Tempore!</p>
+                            <a href="">Full Synopsis <i class="fa fa-angle-right ml-1"></i></a>
+                            <div class="d-flex justify-content-between align-items-ce">
+                                <div class="shoetime__item__viewing">
+                                    <i class="fa fa-clock-o"></i>
+                                    <span>Viewing times</span>
+                                    <button class="btn" disabled>14:25</button>
+                                    <button class="btn">14:25</button>
+                                    <button class="btn">14:25</button>
+                                    <button class="btn">14:25</button>
+
+                                </div>
+                                <div class="showtime__item__length">
+                                    <span>105 MINS</span>
+                                    <span>15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-3 showtime__item">
+                        <div class="col-2">
+                            <img src="./img/movie-12.jpg" alt="" class="w-100 rounded">
+                        </div>
+                        <div class="col-10 ">
+                            <span>ACTION, ADVENTURE, FANTASY</span>
+                            <h1 class="my-1 lead">It's over</h1>
+                            <p class="mb-0 d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ullam quidem maxime tempora</p>
+                            <p class="mb-0 d-block d-lg-none">Natus sequi minus ipsam unde accusantium. Tempore!</p>
+                            <a href="">Full Synopsis <i class="fa fa-angle-right ml-1"></i></a>
+                            <div class="d-flex justify-content-between align-items-ce">
+                                <div class="shoetime__item__viewing">
+                                    <i class="fa fa-clock-o"></i>
+                                    <span>Viewing times</span>
+                                    <button class="btn" disabled>14:25</button>
+                                    <button class="btn">14:25</button>
+                                    <button class="btn">14:25</button>
+                                    <button class="btn">14:25</button>
+
+                                </div>
+                                <div class="showtime__item__length">
+                                    <span>105 MINS</span>
+                                    <span>15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tuesday" role="tabpanel" aria-labelledby="profile-tab">
+                    tuesday
+                </div>
+                <div class="tab-pane fade" id="wednesday" role="tabpanel" aria-labelledby="contact-tab">
+                    wednesday
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ENS SHOW TIME -->
+
+    <!-- COMING SOON -->
+    <section class="comingsoon"></section>
+    <!-- END COMING SOON -->
+
+    <!-- CONTACT -->
+    <section class="contact"></section>
+    <!-- END CONTACT -->
+
+    <!-- FOOTER -->
+    <footer class="footer"></footer>
+    <!-- END FOOTER -->
+
+    <!-- MODAL -->
+    <div id="modalDangky" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="username">Username: </label>
+                            <input type="text" id="username" class="form-control" placeholder="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass">Password: </label>
+                            <input type="password" id="pass" class="form-control" placeholder="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" class="form-control" placeholder="abc@email.com">
+                        </div>
+                        <div class="text-center">
+                            <button class="btn-trailer"><span>Save</span></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

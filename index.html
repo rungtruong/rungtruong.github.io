@@ -2,6 +2,26 @@
 <html lang="en">
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NXJWN3Q');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123860556-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-123860556-1');
+  </script>
+
   <title>Rung Truong's CV</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -36,8 +56,15 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
+<body class="preloading" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXJWN3Q" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Loader image -->
+  <div class="preloader">
+    <img src="img/preloader.gif" alt="preloader">
+  </div>
+  <!-- End Loader image -->
   <!-- HEADER -->
   <header id="header" class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light site-navbar  myNavbar" id="myMenu" data-spy="affix"
@@ -303,7 +330,8 @@
         </div>
         <div class="portfolio-item col-sm-4 animated fadeInUp">
           <div class="portfolio_img">
-            <a href="./scss/Page/MovieStar/index.html"><img class="image img-fluid" src="./img/moviestar_banner.png" alt=""></a>
+            <a href="./scss/Page/MovieStar/index.html"><img class="image img-fluid" src="./img/moviestar_banner.png"
+                alt=""></a>
           </div>
           <div class="portfolio_title">
             <h4>Movie Star</h4>
@@ -339,7 +367,8 @@
         </div>
         <div class="portfolio-item col-sm-4 animated fadeInRight">
           <div class="portfolio_img">
-            <a href="./scss/Page/HomeStead/index.html"><img class="image img-fluid" src="./img/homestead_banner.png" alt=""></a>
+            <a href="./scss/Page/HomeStead/index.html"><img class="image img-fluid" src="./img/homestead_banner.png"
+                alt=""></a>
           </div>
           <div class="portfolio_title">
             <h4>HomeStead</h4>
@@ -434,12 +463,15 @@
       <div class="row">
         <p class="col-12 text-center">
           Copyright &copy; 2018 | Design by
-          <i class="icon-heart" aria-hidden="true"></i> <a href="#about" target="_blank" class="text-primary">Rung Truong</a>
+          <i class="icon-heart" aria-hidden="true"></i> <a href="#about" target="_blank" class="text-primary">Rung
+            Truong</a>
         </p>
       </div>
     </div>
   </footer>
   <!-- END FOOTER -->
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -449,6 +481,17 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script>
+    $(window).on('load', function (event) {
+      $('body').removeClass('preloading');
+      $('.preloader').delay(1000).fadeOut('fast');
+    });
+  </script>
+
+
+
+
   <script src="./js/css3-animate-it.js"></script>
 
   <!-- My Script -->

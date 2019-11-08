@@ -280,8 +280,8 @@ body {
   .intro video {
     height: 100vh;
     width: 100%;
-    -o-object-fit: fill;
-    object-fit: fill;
+    -o-object-fit: cover;
+    object-fit: cover;
     position: relative;
     display: block; }
   .intro .intro-text {
@@ -299,13 +299,14 @@ body {
       font-size: 1.25rem;
       font-weight: 200;
       line-height: 2;
-      max-width: 640px;
+      max-width: 800px;
       margin: 0 auto;
       color: rgba(255, 255, 255, 0.7); }
 
 @media screen and (max-width: 1024px) {
   .intro-text {
-    font-size: 40px !important; }
+    font-size: 40px !important;
+    left: 54% !important; }
     .intro-text .txtSub {
       font-size: 0.8rem !important; } }
 .about {
@@ -326,7 +327,7 @@ body {
     .about .about-typed .string-highlight {
       color: rgba(253, 149, 90, 0.8); }
     .about .about-typed #typewriter {
-      font-size: 2em;
+      font-size: 1.5em;
       margin: 0;
       font-family: "Courier New"; }
       .about .about-typed #typewriter:after {

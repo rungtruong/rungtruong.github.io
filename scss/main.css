@@ -97,14 +97,20 @@ body {
     width: 50%; }
   100% {
     width: 100%; } }
-#preloader {
-  background-color: white;
-  height: 100%;
-  position: fixed;
+.preloader {
   width: 100%;
-  z-index: 1100; }
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000000000;
+  display: block;
+  overflow: hidden; }
 
-#preloader > img {
+.preloader > img {
+  width: 150px;
+  height: 150px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -274,8 +280,8 @@ body {
   .intro video {
     height: 100vh;
     width: 100%;
-    -o-object-fit: fill;
-    object-fit: fill;
+    -o-object-fit: cover;
+    object-fit: cover;
     position: relative;
     display: block; }
   .intro .intro-text {
@@ -320,7 +326,7 @@ body {
     .about .about-typed .string-highlight {
       color: rgba(253, 149, 90, 0.8); }
     .about .about-typed #typewriter {
-      font-size: 2em;
+      font-size: 1.5em;
       margin: 0;
       font-family: "Courier New"; }
       .about .about-typed #typewriter:after {

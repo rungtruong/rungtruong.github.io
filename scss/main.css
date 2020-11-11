@@ -137,20 +137,15 @@ body {
     background: #fff;
     background: transparent !important; }
     .header .myNavbar .navbar-brand {
+      width: 160px;
       margin: 0;
       display: inline-block;
       padding: 5px 20px;
       color: #fff;
       text-transform: uppercase;
       letter-spacing: .2em;
-      border: 2px solid #fff;
       -webkit-transition: .3s all;
       transition: .3s all; }
-      .header .myNavbar .navbar-brand:hover, .header .myNavbar .navbar-brand :active, .header .myNavbar .navbar-brand :focus {
-        color: #fff;
-        background: -webkit-gradient(linear, left top, right top, from(orange), to(#57d131));
-        background: linear-gradient(to right, orange, #57d131);
-        background-position: center center; }
     .header .myNavbar .navbar-nav li {
       position: relative;
       overflow: hidden; }
@@ -299,13 +294,14 @@ body {
       font-size: 1.25rem;
       font-weight: 200;
       line-height: 2;
-      max-width: 640px;
+      max-width: 800px;
       margin: 0 auto;
       color: rgba(255, 255, 255, 0.7); }
 
 @media screen and (max-width: 1024px) {
   .intro-text {
-    font-size: 40px !important; }
+    font-size: 40px !important;
+    left: 54% !important; }
     .intro-text .txtSub {
       font-size: 0.8rem !important; } }
 .about {

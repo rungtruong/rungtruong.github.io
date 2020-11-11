@@ -43,21 +43,22 @@
    
     
     .navbar-brand {
+        width: 160px;
         margin: 0;
         display: inline-block;        
         padding: 5px 20px;
         color: #fff;
         text-transform: uppercase;
         letter-spacing: .2em;
-        border: 2px solid #fff;
+        // border: 2px solid #fff;
         -webkit-transition: .3s all;
         transition: .3s all;  
-        &:hover, :active, :focus {
-            color: #fff;
-            background: -webkit-gradient(linear, left top, right top, from(orange), to(#57d131));
-            background: linear-gradient(to right, orange, #57d131);
-            background-position: center center;
-        }
+        // &:hover, :active, :focus {
+        //     color: #fff;
+        //     background: -webkit-gradient(linear, left top, right top, from(orange), to(#57d131));
+        //     background: linear-gradient(to right, orange, #57d131);
+        //     background-position: center center;
+        // }
     }
     .navbar-nav{
         li{

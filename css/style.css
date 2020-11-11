@@ -137,20 +137,15 @@ body {
     background: #fff;
     background: transparent !important; }
     .header .myNavbar .navbar-brand {
+      width: 160px;
       margin: 0;
       display: inline-block;
       padding: 5px 20px;
       color: #fff;
       text-transform: uppercase;
       letter-spacing: .2em;
-      border: 2px solid #fff;
       -webkit-transition: .3s all;
       transition: .3s all; }
-      .header .myNavbar .navbar-brand:hover, .header .myNavbar .navbar-brand :active, .header .myNavbar .navbar-brand :focus {
-        color: #fff;
-        background: -webkit-gradient(linear, left top, right top, from(orange), to(#57d131));
-        background: linear-gradient(to right, orange, #57d131);
-        background-position: center center; }
     .header .myNavbar .navbar-nav li {
       position: relative;
       overflow: hidden; }
@@ -512,4 +507,4 @@ body {
   .footer p:last-child {
     margin-bottom: 0; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

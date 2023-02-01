@@ -972,13 +972,6 @@
                           </div>
                         </div>
 
-                        <div
-                          class="g-recaptcha"
-                          data-sitekey="6Ld9OUIkAAAAAA4_zjXEzmIZTSqZ1T5E_5Pcjqkh"
-                          data-callback="onSubmit"
-                          data-action="submit"
-                        ></div>
-
                         <input
                           type="submit"
                           class="button btn-send"
@@ -1000,27 +993,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/animating.js"></script>
-
     <script src="js/imagesloaded.pkgd.min.js"></script>
-    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
-    <script>
-      var onloadCallback = function () {
-        var gRecap = $(".g-recaptcha")[0];
-        if (gRecap != undefined) {
-          grecaptcha.render(gRecap, {
-            sitekey: "6Ld9OUIkAAAAAA4_zjXEzmIZTSqZ1T5E_5Pcjqkh",
-            callback: onSubmit
-          });
-        }
-      };
-    </script>
-    <script
-      type="text/javascript"
-      src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=en"
-      async
-      defer
-    ></script>
-
     <script src="js/perfect-scrollbar.min.js"></script>
     <script src="js/jquery.shuffle.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>

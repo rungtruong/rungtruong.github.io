@@ -1,5 +1,5 @@
 (function ($) {
-  var form = document.getElementById("my-form");
+  var form = document.getElementById("contact-form");
 
   async function handleSubmit(event) {
     event.preventDefault();

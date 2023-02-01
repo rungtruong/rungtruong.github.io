@@ -145,7 +145,10 @@ p {
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
+.home-bg {
+  background-image: url("../img/home_bg.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.65);
+}
 /* buttons */
 .btn-primary,
 .btn-secondary,
@@ -2889,13 +2892,14 @@ blockquote {
   line-height: 74px;
   margin: 0;
   text-align: center;
+  margin-bottom: 4px
 }
 
 .title-block .sp-subtitle {
-  color: #aaa;
-  font-size: 21px;
+  color: #F5F7BA;
+  font-size: 24px;
   font-weight: 300;
-  margin: 5px 0;
+  margin: 10px 0;
   text-align: center;
 }
 

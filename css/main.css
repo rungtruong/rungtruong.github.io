@@ -1647,6 +1647,10 @@ input[type="text"],
   position: relative;
   overflow: hidden;
 }
+.portfolio-item-img img {
+  height: 140px;
+  max-height: 140px;
+}
 
 .portfolio-grid figure .portfolio-item-img:after {
   content: "";

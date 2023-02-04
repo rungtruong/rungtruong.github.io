@@ -3,12 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Forest Truong - Resume</title>
+    <title>Forest Truong's Resume</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <link rel="shortcut icon" href="favicon.ico" />
+    <meta
+      property="og:title"
+      itemprop="name"
+      content="Forest Truong's Resume"
+    />
+    <meta property="og:type" content="https://rungtruong.github.io/" />
+    <meta property="og:url" content="rungtruong.github.io" />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://rungtruong.github.io/img/main_photo.jpg"
+    />
+    <meta
+      property="og:description"
+      itemprop="description"
+      content="Senior Front End Developer"
+    />
+    <meta property="og:site_name" content="Forest Truong" />
+
+    <meta name="description" content="Senior Front End Developer" />
+    <meta
+      name="keywords"
+      content="truongdaihairung,rungtruong, rung truong,rừng trương, truong dai hai rung, trương đại hai rừng, forest truong, forest trương, foresttruong"
+    />
+    <meta name="author" content="foresttruong" />
+
+    <meta
+      name="google-site-verification"
+      content="r3XaZMekF_LV7HF5r_kqPdSG4CSzzBgU25Wwvbomfmg"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <link rel="stylesheet" href="css/reset.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css" />
     <link rel="stylesheet" href="css/animations.css" type="text/css" />
@@ -16,6 +51,21 @@
     <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SDKZNH6707"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SDKZNH6707");
+    </script>
   </head>
 
   <body>
@@ -141,7 +191,7 @@
           <div class="animated-sections">
             <!-- Home Subpage -->
             <section data-id="home" class="animated-section start-page">
-              <div class="section-content vcentered">
+              <div class="section-content vcentered home-bg">
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-12">
                     <div class="title-block">
@@ -296,6 +346,8 @@
                           <div class="ci-text">
                             <h4>Growth Driver</h4>
                             <p>
+                              I am curious about new technologies and I am
+                              driven to find ways to implement them in my work.
                               I have worked with many technologies in my
                               projects like Angular, ReactJs, and NestJs,...
                             </p>
@@ -1130,10 +1182,10 @@
                     </div>
 
                     <form
-                      id="contact_form"
+                      id="contact-form"
                       class="contact-form"
-                      action="contact_form/contact_form.php"
-                      method="post"
+                      action="https://formspree.io/f/mbjedpgy"
+                      method="POST"
                     >
                       <div class="messages"></div>
 
@@ -1203,16 +1255,13 @@
                           </div>
                         </div>
 
-                        <div
-                          class="g-recaptcha"
-                          data-sitekey="6Ld9OUIkAAAAAA4_zjXEzmIZTSqZ1T5E_5Pcjqkh"
-                        ></div>
-
                         <input
                           type="submit"
                           class="button btn-send"
                           value="Send message"
                         />
+
+                        <div id="contact-form-status"></div>
                       </div>
                     </form>
                   </div>
@@ -1229,10 +1278,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/animating.js"></script>
-
     <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-
     <script src="js/perfect-scrollbar.min.js"></script>
     <script src="js/jquery.shuffle.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
@@ -1241,5 +1287,6 @@
 
     <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/sender.js"></script>
   </body>
 </html>

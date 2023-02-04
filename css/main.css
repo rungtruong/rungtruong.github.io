@@ -1,10 +1,3 @@
-/*
-* Template Name: BreezyCV - Resume / CV / vCard / Portfolio Template
-* Author: LMPixels
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 1.5.0
-*/
-
 /* ------------------------------------------------------------
 1. Fonts
 2. General Styles
@@ -145,7 +138,10 @@ p {
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
+.home-bg {
+  background-image: url("../img/home_bg.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.65);
+}
 /* buttons */
 .btn-primary,
 .btn-secondary,
@@ -371,7 +367,7 @@ input[type="submit"]:focus {
   /* --- End Navigation --- */
 }
 
-/* --- LMPixels Arrow Nav --- */
+/* ---  Arrow Nav --- */
 .arrows-nav {
   position: absolute;
   padding: 10px 0;
@@ -404,7 +400,7 @@ input[type="submit"]:focus {
 .arrows-nav div:hover {
   color: #f58545;
 }
-/* --- End LMPixels Arrow Nav --- */
+/* --- End  Arrow Nav --- */
 
 .header-photo {
   position: relative;
@@ -2893,13 +2889,14 @@ blockquote {
   line-height: 74px;
   margin: 0;
   text-align: center;
+  margin-bottom: 4px;
 }
 
 .title-block .sp-subtitle {
-  color: #aaa;
-  font-size: 21px;
+  color: #f5f7ba;
+  font-size: 24px;
   font-weight: 300;
-  margin: 5px 0;
+  margin: 10px 0;
   text-align: center;
 }
 

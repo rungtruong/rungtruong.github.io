@@ -23,4 +23,4 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Contact
 
-For any questions or feedback, please email [rung.iuh@gmail.com](mailto:rung.iuh@gmail.com).
+For any questions or feedback, please email [rung.iuh@gmail.com](https://rungtruong.github.io/#contact).

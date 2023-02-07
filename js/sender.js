@@ -1,5 +1,5 @@
 var form = document.getElementById("contact-form");
-var formStatus = document.getElementById("contact-form-formStatus");
+var formStatus = document.getElementById("contact-form-status");
 
 async function handleSubmit(event) {
   event.preventDefault();

@@ -1,0 +1,109 @@
+<div id="ajax-page" class="ajax-page-content">
+  <div class="ajax-page-wrapper">
+    <div class="ajax-page-nav">
+      <div class="nav-item ajax-page-prev-next">
+        <a class="ajax-page-load" href="src/portfolio-digital.html"
+          ><i class="lnr lnr-chevron-left"></i
+        ></a>
+        <a class="ajax-page-load" href=""
+          ><i class="lnr lnr-chevron-right"></i
+        ></a>
+      </div>
+      <div class="nav-item ajax-page-close-button">
+        <a id="ajax-page-close-button" href="#"
+          ><i class="lnr lnr-cross"></i
+        ></a>
+      </div>
+    </div>
+
+    <div class="ajax-page-title">
+      <h1>Farm Box</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8 col-md-8 portfolio-block">
+        <div class="owl-carousel portfolio-page-carousel">
+          <div class="item">
+            <img src="../img/portfolio/fb.PNG" alt="" />
+          </div>
+        </div>
+        <script type="text/javascript">
+          jQuery(document).ready(function ($) {
+            $(".portfolio-page-carousel").imagesLoaded(function () {
+              $(".portfolio-page-carousel").owlCarousel({
+                smartSpeed: 1200,
+                items: 1,
+                loop: true,
+                dots: true,
+                nav: true,
+                navText: false,
+                margin: 10,
+                autoHeight: true,
+              });
+            });
+          });
+        </script>
+      </div>
+
+      <div class="col-sm-4 col-md-4 portfolio-block">
+        <!-- Project Description -->
+        <div class="project-description">
+          <div class="block-title">
+            <h3>Description</h3>
+          </div>
+
+          <p class="text-justify">
+            A portal site for farm management, which features a crop dashboard,
+            sensor charts, rack management, user administration, access
+            authorization, and sensor control.
+          </p>
+          <p>Team Size: 11</p>
+          <p>Position: Senior Front End Software Engineer</p>
+          <!-- /Project Description -->
+
+          <!-- Responsibilities -->
+          <div class="tags-block">
+            <div class="block-title">
+              <h3>Responsibilities</h3>
+            </div>
+            <ul class="project-general-info">
+              <li>
+                <p><i class="fa fa-tasks"></i> Task management</p>
+                <p><i class="fa fa-tasks"></i> Mentoring junior developers</p>
+                <p><i class="fa fa-tasks"></i> Analysis and design</p>
+                <p><i class="fa fa-tasks"></i> Development</p>
+                <p><i class="fa fa-tasks"></i> Code review and optimization</p>
+                <p><i class="fa fa-tasks"></i> Bug fixing</p>
+              </li>
+            </ul>
+          </div>
+          <!-- /Responsibilities -->
+
+          <!-- Technology -->
+          <div class="tags-block">
+            <div class="block-title">
+              <h3>Technologies Used</h3>
+            </div>
+            <ul class="tags">
+              <li><a>HTML5</a></li>
+              <li><a>CSS3</a></li>
+              <li><a>Angular</a></li>
+              <li><a>TypeScript</a></li>
+              <li><a>SCSS</a></li>
+              <li><a>CDK drag-and-drop</a></li>
+              <li><a>NG-Zorro (Ant Design for Angular)</a></li>
+              <li><a>E-Chart</a></li>
+              <li><a>Mapbox</a></li>
+              <li><a>Socket.io</a></li>
+              <li><a>Git</a></li>
+              <li><a>Jira</a></li>
+            </ul>
+          </div>
+
+          <!-- /Technology -->
+        </div>
+        <!-- Project Description -->
+      </div>
+    </div>
+  </div>
+</div>

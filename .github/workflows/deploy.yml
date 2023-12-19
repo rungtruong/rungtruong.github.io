@@ -3,6 +3,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: foresttruong.info
     steps:
       - uses: actions/checkout@v1
       - name: Copy repository contents via scp
